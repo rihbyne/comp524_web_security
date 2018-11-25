@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Web Cookies}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Vulnerabilities}{7}{0}{1}
+\beamer@subsectionintoc {1}{2}{CSRF attack}{8}{0}{1}
+\beamer@subsectionintoc {1}{3}{session limitations}{11}{0}{1}
+\beamer@sectionintoc {2}{Token Authentication}{15}{0}{2}
+\beamer@subsectionintoc {2}{1}{OAuth 2.0}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{JSON Web Tokens(JWT)}{19}{0}{2}
+\beamer@subsectionintoc {2}{3}{OAuth + JWT}{21}{0}{2}
+\beamer@subsectionintoc {2}{4}{OAuth + Signatures}{24}{0}{2}
+\beamer@sectionintoc {3}{Macaroons}{28}{0}{3}
+\beamer@sectionintoc {4}{References}{29}{0}{4}
