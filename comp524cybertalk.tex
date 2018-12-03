@@ -186,7 +186,71 @@
 % -------------------------------------
 
 \section{Macaroons}
+\begin{frame}{Introduction}
+  \begin{itemize}
+    \item restricted bearer tokens/credentials allowing delegation
+      \pause
+    \item embedded caveats(a.k.a claims) which attenuate the scope
+      \pause
+    \item used only in certain context, hence confinement
+  \end{itemize}
+\end{frame}
+
 \begin{frame}
+  \begin{columns}
+    \column{0.5\textwidth}
+    The bearer client $C$ can access a resource at a target service($TS$) as long as
+    \begin{itemize}
+      \item \textit{as long as} the operation is read
+      \item \textit{as long as} the object is \textit{privateImage.jpg}
+      \item \textit{as long as} the user at $C$ is logged into service $A$
+      \item \textit{as long as} that logged-in user is in group $G$ at $A$
+      \item \textit{as long as} the above proofs are recent/fresh enough
+      \item and, \textit{as long as} the user at $C$ didn’t just log out of $A$
+    \end{itemize}
+    \pause
+    \column{0.5\textwidth}
+    \centering{\includegraphics[width=60mm, height=40mm, scale=0.1]{img/macaroons/ac_matrix.png}}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \centering{\includegraphics[width=80mm, height=40mm, scale=0.1]{img/macaroons/macaroons_in_action.png}}
+    \caption{source - macaroons research paper}
+  \end{figure}
+  
+\end{frame}
+
+\subsection{Design in brief}
+\begin{frame}{Design in brief}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \centering{\includegraphics[width=50mm, height=60mm, scale=0.1]{img/macaroons/mac_hmac_chaining.png}}
+    \pause
+    \column{0.5\textwidth}
+    \centering{\includegraphics[width=50mm, height=60mm, scale=0.1]{img/macaroons/mac_authorization.png}}
+  \end{columns}
+\end{frame}
+
+\subsection{applications}
+\begin{frame}{applications}
+  Macaroons \textit{vs} Web Cookies
+  \begin{itemize}
+    \pause
+  \item ensure integrity even when holding state at the client side
+    \pause
+  \item adding caveats to limit the usefulness of stolen cookies
+  \end{itemize}
+
+  \pause
+  OAuth vs Macaroons
+  \begin{itemize}
+    \pause
+  \item user-level access tokens: embedding caveats into the access token and mandating validation at the resource server.
+    \pause
+  \item agents: embedding security guidelines as caveats when agents participate in OAuth flows.
+  \end{itemize}
 \end{frame}
 
 \section{References}

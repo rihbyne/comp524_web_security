@@ -8,4 +8,6 @@
 \beamer@subsectionintoc {2}{3}{OAuth + JWT}{21}{0}{2}
 \beamer@subsectionintoc {2}{4}{OAuth + Signatures}{24}{0}{2}
 \beamer@sectionintoc {3}{Macaroons}{28}{0}{3}
-\beamer@sectionintoc {4}{References}{29}{0}{4}
+\beamer@subsectionintoc {3}{1}{Design in brief}{34}{0}{3}
+\beamer@subsectionintoc {3}{2}{applications}{36}{0}{3}
+\beamer@sectionintoc {4}{References}{42}{0}{4}
